@@ -54,34 +54,8 @@ SELECT count(DISTINCT hometeam) FROM matches WHERE (division_code = 'F1') OR (di
 7) Have Huddersfield played Swansea in any of the recorded matches?
 
 ```sql
-<!SELECT * FROM matches WHERE (LOWER(hometeam) = 'Huddersfield' AND LOWER(awayteam) = 'Swansea') OR (LOWER(awayteam) = 'Huddersfield' AND LOWER(hometeam) = 'Swansea');
+<!SELECT * FROM matches WHERE (LOWER(hometeam) = 'Huddersfield' AND LOWER(awayteam) = 'Swansea') OR (LOWER(hometeam) = 'Swansea' AND LOWER(awayteam) = 'Huddersfield');
 
-
-```
-
-8) How many draws were there in the `Eredivisie` between 2010 and 2015?
-
-```sql
-<!-- Copy solution here -->
-
-
-```
-
-9) Select the matches played in the Premier League in order of total goals scored (`fthg` + `ftag`) from highest to lowest. When two matches have the same total the match with more home goals (`fthg`) should come first. 
-
-```sql
-<!-- Copy solution here -->
-
-
-```
-
-10) Find the name of the division in which the most goals were scored in a single season and the year in which it happened.
-
-```sql
-<!-- Copy solution here -->
-
-
-```
 
 ### Useful Resources
 
